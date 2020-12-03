@@ -29,10 +29,11 @@ const routes = [{
       {
         path: 'message',
         component: HomeMessage
-      }, {
-        path: '',
-        redirect: "news"
-      }
+      }, 
+      // {
+      //   path: '',
+      //   redirect: "news"
+      // }
     ]
   },
   {

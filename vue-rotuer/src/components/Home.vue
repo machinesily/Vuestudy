@@ -10,7 +10,24 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      path:'/home/news'
+    }
+  },
+beforeCreate () {
+  console.log("beforeCreate");
+},
+destroyed () {
+  console.log('destroyed');
+},
+activated () {
+  this.$router.push(this.path)
+},
+beforeRouteLeave(to, from, next) {
+ this.path = this.$route.path
+ next()
+}
 }
 </script>
 
