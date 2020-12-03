@@ -1,0 +1,389 @@
+// 解决高度塌陷
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topbar-wrapper {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  background-color: #333333;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+// 导航栏内部容器样式
+.wra {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+// 导航栏左侧样式
+.nav-left {
+  a {
+    color: #b0b0b0;
+    line-height: 40px;
+  }
+
+  li {
+    float: left;
+    position: relative;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  span {
+    margin: 0 .3em;
+    color: #424242;
+  }
+
+  .dlcode {
+    width: 128px;
+    height: 148px;
+    background-color: #cccccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+
+    img {
+      width: 90px;
+      height: 90px;
+      margin-top: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333333;
+      line-height: 14px;
+    }
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    display: none;
+  }
+
+  .download:hover .dlcode,
+  .download:hover .triangle {
+    display: block;
+  }
+
+}
+
+// 导航栏右侧样式
+.nav-right {
+  margin: 0 auto;
+  float: right;
+
+  a {
+    padding: 0 5px;
+  }
+
+  span {
+    margin: 0 .3em;
+    color: #424242;
+  }
+
+  .shop-car {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:hover a {
+      color: rgb(247, 115, 0);
+    }
+  }
+
+}
+
+// 菜单栏外部容器样式
+.menu-wrapper {
+  height: 100px;
+  width: 100%;
+
+  line-height: 100px;
+}
+
+.logo {
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-top: 22.5px;
+}
+
+.menu-nav {
+  margin-left: 150px;
+  float: left;
+
+  li {
+    padding: 0 10px;
+    float: left;
+
+    &:hover {
+      color: #ff6700;
+    }
+  }
+
+  a {
+    color: #333333;
+  }
+
+}
+
+.prolist {
+  margin-top: 20px;
+}
+
+.home-channel-list {
+  width: 228px;
+  position: absolute;
+
+  ul {
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 70px;
+    height: 82px;
+  }
+}
+
+.home-promo-list {
+  width: 978px;
+  height: 170px;
+  float: right;
+
+  ul {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 316px;
+    height: 170px;
+  }
+}
+
+.banner {
+  margin-top: 20px;
+  height: 120px;
+  width: 100%;
+}
+
+.starpro {
+  width: 100%;
+  margin-top: 20px;
+
+  .top-title {
+    font-size: 20px;
+    font-weight: bolder;
+    height: 66px;
+    line-height: 66px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+
+    img {
+      width: 160px;
+      height: 160px;
+      margin-top: 20px;
+    }
+
+    .title {
+      height: 20px;
+      margin: 0 10px 2px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333;
+    }
+
+
+    .dec {
+      margin: 0px 10px 10px;
+      height: 18px;
+      font-weight: 400;
+      font-size: 12px;
+      color: rgb(193, 193, 193);
+    }
+
+    .price {
+      color: #ff6700;
+      margin: 0 10px 14px;
+    }
+
+    .line1 {
+      height: 1px;
+      width: 234px;
+      background-color: rgb(254, 190, 73);
+    }
+
+    .line2 {
+      height: 1px;
+      width: 234px;
+      background-color: rgb(73, 163, 73);
+    }
+
+    .line3 {
+      height: 1px;
+      width: 234px;
+      background-color: rgb(73, 73, 254);
+    }
+
+    .line4 {
+      height: 1px;
+      width: 234px;
+      background-color: rgb(254, 72, 72);
+    }
+
+    .line5 {
+      height: 1px;
+      width: 234px;
+      background-color: rgb(73, 163, 163);
+    }
+  }
+
+}
+
+.hotpro {
+  width: 100%;
+
+  .top-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 66px;
+    line-height: 66px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .brick-promo-list {
+    float: left;
+    background-color: rgb(245, 245, 245);
+    width: 248px;
+    height: 614px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // position: absolute;
+    li {
+      width: 248px;
+      height: 300px;
+    }
+  }
+
+  .brick-list {
+    float: left;
+    background-color: rgb(245, 245, 245);
+    width: 978px;
+    height: 614px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div>li {
+      width: 234px;
+      height: 300px;
+      background-color: white;
+
+      img {
+        width: 160px;
+        height: 160px;
+        margin-top: 20px;
+      }
+
+
+      .title {
+        margin: 0 10px 2px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+
+
+      .dec {
+        margin: 0px 10px 10px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(193, 193, 193);
+      }
+
+      .price {
+        color: #ff6700;
+        margin: 5px 10px 0px;
+      }
+    }
+  }
+}
+
+.brick-item-s{
+  width: 234px;
+  height: 300px;
+  background-color: rgb(245, 245, 245);
+  .brick-item-s1{
+    margin-bottom: 20px;
+  }
+  img{
+    width: 234px;
+    height: 140px;
+  }
+}
+
+.footer-01{
+  margin-top: 60px;
+  text-align: center;
+}
+.footer-02{
+  margin-top: 20px;
+  text-align: center;
+}

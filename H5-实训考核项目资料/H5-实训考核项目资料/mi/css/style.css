@@ -1,0 +1,56 @@
+/**全局样式**/
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/**index.html**/
+.header{
+	width:100%;
+}
+.nav{
+	height:40px;
+	background:#333333;
+}
+.menu{
+	width:1226px;
+	height:54px;
+	background:#0f0;
+	margin:23px auto;
+}
+.main{
+	width:1226px;
+	margin:0px auto 20px;
+}
+.banerlist{
+	height:460px;
+	background:#ff0;
+}
+.prolist{
+	height:140px;
+	background:#f0f;
+	margin-top:15px;
+}
+.banner{
+	height:120px;
+	background:#0ff;
+	margin:20px 0px;
+}
+.starpro{
+	height:395px;
+	background:#f0f;
+}
+.hotpro{
+	height:670px;
+	background:#ff0;
+}
+.footer{
+	height:140px;
+	background:#ccc;
+}
