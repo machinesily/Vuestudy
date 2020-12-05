@@ -2,7 +2,7 @@
   <div id="app">
     <tab-bar>
     <tab-bar-item path='/home' activeColor="deepPink">
-      <img slot="item-icon" src="../src/assets/img/tabbar/home.svg" alt="">
+      <img slot="item-icon" src="../src/assets/img/tabbar/home.svg" alt="111">
       <img slot="item-icon-active" src="../src/assets/img/tabbar/home_active.svg" alt="">
       <div slot="item-text">首页</div>
     </tab-bar-item>
